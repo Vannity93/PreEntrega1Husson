@@ -1,0 +1,159 @@
+<!--Salvador Husson-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Nvidia Corporation</title>
+		<meta name="description" content="Test Page">
+		<meta name="keywords" content="html, pagina, creacion, nvidia, tarjetas graficas">
+        <link rel="icon" type="image/png" href="Imagenes/logo.png">
+		<meta name="author" content="SalvaFausti">
+		<link rel="stylesheet" href="estilos.css" />
+            
+	</head>
+	<body>
+        <header>
+            <h1 id="centro6"></h1>
+		</header>
+		<nav>																												
+			<ul>
+				<li><a href="index.html" title="Introduccion" target="_self">Inicio</a></li>
+				<li><a href="detalle.html" title="Nuevas mercaderias" target="_self">Recien llegados</a></li>
+				<li><a href="detalle2.html" title="Notebooks" target="_self">Nuestras Notebooks</a></li>
+				<li><a href="detalle3.html" title="Monitores" target="_self">Nuestros Montitores</a></li>
+				<li><a href="detalle4.html" title="Placas de video" target="_self">Nuestras Placas de video</a></li>
+                <li><a href="carrito.html" title="Tienda" target="_self">Tienda</a></li>
+			</ul>
+		</nav>
+        <h2>Productos Nvidia</h2>
+        
+<!-- Template de las filas -->
+<template id="agregar-producto-al-carro">
+  <tr>
+        <td id="producto">Placa de Video</td>
+        <td><button id="menos-cantidad" class="button">-</button><span id="cant">1</span><button id='mas-cantidad' class="button">+</button></td>
+        <td class="precio-aside" id="precio-uni">750.00</td>
+        <td class="precio-aside" id="precio-total-prod">750.00</td>
+      </tr>
+</template>
+<!-- Template del footer de la tabla -->
+<template id="tfooter">
+  <tr class="none">
+    <td colspan = 2 class="border-bottom-left"><button id="vaciar-aside" class="button">Vaciar carrito</button></td>
+    <td class="negrita">Precio Total</td>
+    <td id="total-a-pagar" class="precio-aside border-bottom-right negrita">5.00</td>
+  </tr>
+</template>
+
+<!-- Aqui se insertan las cards de productos con javascript-->
+<div class="contenedor-productos1">
+<!-- template del producto -->
+<template id="template-prod">
+  <article class="cartola">
+   <!-- Imagen del producto -->
+   <div class="contenedor-img">
+    <img src="" alt="">
+   </div>
+   <!-- Nombre y descripción del producto -->
+   <div class="div-info">
+     <h2 class="nombre-prod">Nombre Producto</h2>
+     <hr class="separador">
+     <p class="descripcion-prod">Descripción producto</p>
+   </div>
+   <!-- Precio y Agregar al carrito -->
+   <div class="div-precio-boton">
+      <p class="precio">precio Producto</p>
+      <button class="boton">Agregar</button>
+   </div>
+  </article>
+</template>
+<template id="template-prod">
+  <article class="cartola">
+   <!-- Imagen del producto -->
+   <div class="contenedor-img">
+    <img src="" alt="">
+   </div>
+   <!-- Nombre y descripción del producto -->
+   <div class="div-info">
+     <h2 class="nombre-prod">Nombre Producto</h2>
+     <hr class="separador">
+     <p class="descripcion-prod">Descripción producto</p>
+   </div>
+   <!-- Precio y Agregar al carrito -->
+   <div class="div-precio-boton">
+      <p class="precio">precio Producto</p>
+      <button class="boton">Agregar</button>
+   </div>
+  </article>
+</template>
+</div>
+
+<div class="defi">Componentes de PC</div>
+
+<div class="contenedor-productos2">
+  <!-- template del producto -->
+  <template id="template-prod">
+    <article class="cartola">
+     <!-- Imagen del producto -->
+     <div class="contenedor-img">
+      <img src="" alt="">
+     </div>
+     <!-- Nombre y descripción del producto -->
+     <div class="div-info">
+       <h2 class="nombre-prod">Nombre Producto</h2>
+       <hr class="separador">
+       <p class="descripcion-prod">Descripción producto</p>
+     </div>
+     <!-- Precio y Agregar al carrito -->
+     <div class="div-precio-boton">
+        <p class="precio">precio Producto</p>
+        <button class="boton">Agregar</button>
+     </div>
+    </article>
+  </template>
+  <template id="template-prod">
+    <article class="cartola">
+     <!-- Imagen del producto -->
+     <div class="contenedor-img">
+      <img src="" alt="">
+     </div>
+     <!-- Nombre y descripción del producto -->
+     <div class="div-info">
+       <h2 class="nombre-prod">Nombre Producto</h2>
+       <hr class="separador">
+       <p class="descripcion-prod">Descripción producto</p>
+     </div>
+     <!-- Precio y Agregar al carrito -->
+     <div class="div-precio-boton">
+        <p class="precio">precio Producto</p>
+        <button class="boton">Agregar</button>
+     </div>
+    </article>
+  </template>
+  </div>
+
+<!-- Tabla - Productos del Carrito -->
+<aside>
+  <div class="aside-calculo" id="aside-calculo">
+  <table class="aside">
+      <caption class="titulo-aside">Productos en el carrito</caption>
+      <thead class="cabecera border-top-right">
+      <tr>
+          <th class="border-top-left">Nombre Producto</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th class="border-top-right">Precio Total</th>
+      </tr>
+      </thead>
+      <tbody id="carrito-body">
+
+      </tbody>
+      <tfoot id="footer">
+      <tr><td class="border-bottom-left border-bottom-right" colspan = 4>¡No hay ningun elemento en el carrito!</td></tr>
+      </tfoot>
+  </table>
+  </div>
+</aside>
+<script src="FuncionesJavaScript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,312 @@
+/*Salvador Husson*/
+html,body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden; 
+	background-color:#191919;					/*El fondo, con el color*/
+}
+
+#contenedor{
+	width:100%;
+}
+
+article > header > h2{                            /*Titulo1*/
+	font-size:20px;
+	font-family:verdana;
+	font-weight:bold;
+	color: aliceblue;
+}
+
+h2{
+	font-size: 16px;                              /*subtitulo1*/
+	font-family:verdana;
+	font-weight:bold;
+	color: aliceblue;
+}
+header{
+	background-color: #191919;
+	background-image:url("Imagenes/pngfind.com-nvidia-logo-png-795812.pngwidth=424&height=80.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	padding: 80px;
+}
+
+nav{
+	background-color:#76b900;	               /*El header*/
+	border-width:1px;
+	border-style:solid;
+	border-color:#000000;
+	text-align:center;
+}
+
+nav > ul > li{                                    
+	list-style:none;
+	display:inline-block;
+	padding:5px;
+	font:bold 14px verdana;
+}
+
+nav a{
+	text-decoration:none;
+	color: #000000;
+}	
+
+nav a:hover{
+	color: aliceblue;
+}
+
+.aside{												/*Aside con imagen*/
+	border:1px solid #76b900;
+	padding:10px;
+	width:35%;
+	height:62.3%;
+	font:bold 14px verdana;
+	color: aliceblue;
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+}
+
+article{                                           /*Articulo con imagenes y el texto*/
+	background-color: #191919;
+	border:1px solid #76b900;
+	padding:10px;
+	font:bold 14px verdana;
+	color: aliceblue;
+}
+
+footer{												 /*Footer*/
+	font:bold 14px Verdana;
+	clear:left;
+	text-align:center;	background-color: #76b900;
+	border-style:solid;
+	border:1px solid #000000;
+  padding-bottom: 100px;
+}
+
+table{											  /*bordes de la tabla*/
+	float: right;
+}
+
+.social{									  	/*redes*/
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+justify-content:space-around;
+align-items:baseline;
+text-decoration:none;
+}
+
+.social a {
+	color: #000000;
+	width: 20px;
+	height:20px;
+}
+
+.social a:hover{
+	color: #ffffff;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*CSS DEL CARRITO*/
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+  --border: 1px solid #76b900;
+/*  --border-table: 1px solid #76b900;*/
+}
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+/* DESDE AQUI EMPIEZA LA SECCIÓN DEL CARRITO */
+.aside-calculo {
+  display: flex;
+  justify-content: center;
+}
+.titulo-aside {
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+.border-top-left {
+  border-top-left-radius: 10px;
+}
+.border-top-right {
+  border-top-right-radius: 10px;
+}
+.border-bottom-right {
+  border-bottom-right-radius: 10px;
+}
+.border-bottom-left {
+  border-bottom-left-radius: 10px;
+}
+th {
+  font-size: 1.1rem;
+  background: #76b900;
+}
+th, td, tr {
+  border: var(--border-table);
+  text-align: center;
+  padding: .4rem 0;
+}
+td {
+  background: #191919;
+  color: white;
+}
+.precio-aside::before {
+  content: 'US$';
+  padding-right: 0.4rem;
+}
+.button {
+  margin: 0 .4rem;
+  border: var(--border-table);
+  background: #76b900;
+  color: white;
+  cursor: pointer;
+}
+.negrita {
+  font-weight: bold;
+}
+.none {
+  background: transparent;
+  border: none;
+}
+
+
+/* DESDE AQUI EMPIEZA LA SECCIÓN DE LOS PRODUCTOS */
+
+.cartola {
+  height: 300px;
+  width: 230px;
+  border-radius: 0.35rem;
+  background: #191919;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow:0px 0px 1rem #76b900;
+  transition: transform 0.1s;
+  overflow: hidden;
+  margin: 1rem;
+}
+.cartola:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  box-shadow: 0 0 2rem #76b900;
+}
+/* Imagen */
+.contenedor-img {
+  border-top-left-radius: .35rem;
+  height: 127px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+/* Nombre y descripción del producto */
+.div-info {
+  flex: 1;
+  border-bottom: var(--border);
+  overflow: hidden;
+}
+.nombre-prod {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+.separador {
+  width: 80%;
+  margin: .2rem auto;
+  border: none;
+  border-top: var(--border);
+}
+.descripcion-prod {
+  margin: 0;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
+  overflow: hidden;
+  opacity: .7;
+}
+/* Precio y Boton Carrito */
+.div-precio-boton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem;
+}
+.precio {
+  margin: 0 .5em;
+}
+.precio::before {
+  content: 'US$';
+  padding-right: 0.3rem;
+}
+.boton {
+  background: #76b900;
+  cursor: pointer;
+  border: var(--border);
+  border-radius: 3px;
+  font-size: 1rem;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 3px hsl(0, 100%, 0%, 0.15);
+}
+.boton:hover {
+  color: white;
+  background: #76b900;
+  box-shadow: 1px 1px 3px hsl(0, 100%, 0%, 0.25);
+}
+.boton::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(Imagenes/carrito.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.boton:hover::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(Imagenes/carrito.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.carrito {
+  width: 18px;
+}
+/* Contenedor de todos los productos */
+.contenedor-productos1 {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+.contenedor-productos2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+.defi{
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
