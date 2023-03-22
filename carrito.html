@@ -155,5 +155,12 @@
   </div>
 </aside>
 <script src="FuncionesJavaScript.js"></script>
+<script>
+  fetch("carrito.json")
+    .then(response => response.json())
+    .then(data => {
+      // Manipulación del archivo JSON aquí
+    })
+</script>
     </body>
 </html>
